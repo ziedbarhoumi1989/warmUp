@@ -3,13 +3,10 @@
 //you can only add one at each summetion, you'll need to use recursion in this.
 //1
 function gcd(num1,num2) {
-	if(num1%num2===0) {
-		return num2
+	if(num2===0) {
+		return  num1
 	}
-	if(num1>num2) {
-		return gcd(num1-1,num2-1)
-	}
-	return gcd(num1-1,num2-1)
+	return gcd(num2,num1%num2)
 }
 
 //2
