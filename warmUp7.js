@@ -20,6 +20,7 @@ function average(array) {
 	return sum/array.length;
 }
 var ages= [13,14,13,15,16,17,19,13,16,15];
+average(ages);
 /////////////////////////////Q4
 function ageInSecondes(age) {
 	return age * 365 * 24 * 60 * 60;
