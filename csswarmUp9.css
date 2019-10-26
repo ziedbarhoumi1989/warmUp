@@ -1,0 +1,14 @@
+body{
+	background:blue;
+}
+img{
+	width:33%;
+	height:auto;
+}
+#button1{
+	 font-family: cursive;
+
+}
+#button2 {
+	font-family: "Helvetica Neue", "Arial", sans-serif;
+}
