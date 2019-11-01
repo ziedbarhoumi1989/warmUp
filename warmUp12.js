@@ -51,20 +51,22 @@ Technical Details
  		 	
  		 }
 
-
- 	
- 	if(!condition1 || !condition2) {
- 		var first=arr2[0]
- 		arr2.shift();
- 		var index=
- 		arr2[0]=arr2[0]+Math.pow(first,index)
- 	}
+   
+ 
+ }
+       var index=-1
+    
+    if(!condition1 || !condition2) {
+        var first=arr2[0]
+        arr2.shift();
+         index++;
+        arr2[0]=arr2[0]+Math.pow(first,index)
+    }
  
  if(condition1 &&condition2){
- 	result.push(min)
- 	result.push(max)
- 	break
- }
+    result.push(min)
+    result.push(max)
+    break
  }
 }
 return result;

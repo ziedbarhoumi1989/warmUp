@@ -31,3 +31,54 @@
             filter_list([1,'a','b',0,15]) == [1,0,15]
             filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
 */
+/////////////////////////////////////////////////////////////////////question1/////////////////////////////
+function convertRoman(romanNumeral) {
+	var array=romanNumeral.split('');
+	var result=0;
+	for (var i in array) {
+		if(array[i] === 'I') {
+			array[i]=1;
+		}
+		if(array[i] === 'V') {
+			array[i]=5;
+		}
+		if(array[i] === 'X') {
+			array[i]=10;
+		}
+		if(array[i] === 'L') {
+			array[i]=50;
+		}
+		if(array[i] === 'C') {
+			array[i]=100;
+		}
+		if(array[i] === 'D') {
+			array[i]=100;
+		}
+		if(array[i] === 'M') {
+			array[i]=100;
+		}
+		result += array[i]
+	}
+	return result;
+
+}
+//////////////////////////////////Question2///////////////////////////////////////
+function convertToCamel(string) {
+	var splitted= string.split('');
+	for (var i in splitted){
+		if(splitted[i] ==="_" || splitted[i] === "-") {
+			splitted.splice(i,1)
+			
+			splitted[i]=splitted[i].toUpperCase()
+			
+		}
+
+	} 
+	//console.log(splitted)
+	return splitted.join('') 
+}
+//////////////////////////////////////////Question 3//////////////////////
+function filterList(array) {
+	return array.filter(element=> typeof(element)==='number')
+}
+
