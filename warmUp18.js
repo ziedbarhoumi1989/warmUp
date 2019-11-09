@@ -10,3 +10,25 @@
 
 // input   =  "aaaaaaaaaaaa"
 // result  =  "123456789101112"
+function convert(string) {
+var obj={};
+for(var i=0;i<string.length;i++) {
+	if(!obj[string[i]]) {
+		obj[string[i]]=[1]
+	} else obj[string[i]].push(obj[string[i]][i-1])
+}
+
+var j=0;
+var result=""
+var count=0
+for(var key in obj) {
+	while(j<string.length){
+	if(string[j]===key) {
+		result+= obj[key][count]
+		count++
+	}
+}
+		
+}
+return result
+}
